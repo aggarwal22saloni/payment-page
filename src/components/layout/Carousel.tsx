@@ -9,18 +9,6 @@ interface CarouselProps {
 const Carousel: React.FC<CarouselProps> = ({ cards }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-//   const handlePrev = () => {
-//     setCurrentIndex((prevIndex) =>
-//       prevIndex === 0 ? cards.length - 1 : prevIndex - 1
-//     );
-//   };
-
-//   const handleNext = () => {
-//     setCurrentIndex((prevIndex) =>
-//       prevIndex === cards.length - 1 ? 0 : prevIndex + 1
-//     );
-//   };
-
   return (
     <div className="carousel">
       <div className="carousel-inner" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
