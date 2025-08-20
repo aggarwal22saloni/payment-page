@@ -5,6 +5,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "^18.0.0"
+  },
   "description": "",
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
