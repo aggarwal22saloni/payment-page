@@ -8,6 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
     clean: true,
+    publicPath: '/',
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -15,6 +16,7 @@ module.exports = {
     port: 3000,
     open: true,
     hot: true,
+    historyApiFallback: true
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
